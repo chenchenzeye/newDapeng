@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  background-color: #bbb;
+}
+header{
+position: relative;
+}
+.navi-text{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: larger;
+}
+.el-menu-item a{
+    text-decoration: none;
+}
+.welcome{
+    position: relative;
+    text-align: center;
+    margin: 80px auto;
+}
+
+footer{
+    position: relative;
+    height: 150px;
+    background-color: #bbb;
+}

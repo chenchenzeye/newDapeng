@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navi-text{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: larger;
+}
+.el-menu-item a{
+    text-decoration: none;
+}
+
+.introduction{
+    position: relative;
+    margin: 50px auto;
+}
+.tips{
+    position: relative;
+    background-color: #ddd;
+    margin: 50px auto;
+}
+footer{
+    position: relative;
+    height: 150px;
+    background-color: #bbb;
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.Jason.dao.UserMapper">
+
+    <insert id="addUser" parameterType="com.Jason.pojo.User">
+        insert into project_06.user (UserName, UserPassword, UserEmail)
+        VALUE (#{UserName},#{UserPassword},#{UserEmail});
+    </insert>
+
+    <select id="queryUserByID" resultType="com.Jason.pojo.User">
+        select * from project_06.user where UserID = #{UserID}
+    </select>
+
+    <select id="queryUserByUsernameAndPassword" resultType="com.Jason.pojo.User">
+        select * from project_06.user where UserName=#{UserName} and UserPassword=#{UserPassword}
+    </select>
+    <select id="queryUserByUserName" resultType="com.Jason.pojo.User">
+        select * from project_06.user where UserName=#{UserName}
+    </select>
+</mapper>

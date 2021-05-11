@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Administrator Login</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <link rel="stylesheet" href="./css/adjustment.css">
+</head>
+<style>
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+  header{
+    margin-bottom: 10px;
+  }
+  .navi-text{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: larger;
+  }
+  .el-menu-item a{
+    text-decoration: none;
+  }
+  .container{
+    position: relative;
+    height: 700px;
+    margin: 0px auto;
+    margin-bottom: 30px;
+  }
+  #myform{
+    margin-top: 60px;
+  }
+  .form-control{
+    width: 480px;
+    height: 40px;
+    margin: 0 auto;
+    font-size: 14px;
+    position: relative;
+  }
+  .form-group label{
+  display: block;
+  width: 480px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+</style>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+  <!--导航栏-->
+  <div id="navigation">
+    <el-menu
+      :default-active="activeIndex"
+      class="el-menu-demo"
+      mode="horizontal"
+      @select="handleSelect"
+      background-color="#545c64"
+      text-color="#fff"
+      active-text-color="#ffd04b"
+      >
+
+      <el-menu-item index="1"><a href="./index.html"><span class="navi-text">Home page</span></a></el-menu-item>
+
+          <el-submenu index="2">
+            <template slot="title"><span class="navi-text">Login</span></template>
+            <el-menu-item index="2-1"><a href="./userLogin.html">User Login</a></el-menu-item>
+            <el-menu-item index="2-2">Manager Login</el-menu-item>
+          </el-submenu>
+          
+          <el-menu-item index="3"><a href="./shouldToKnow.html"><span class="navi-text">Health Check Questionnaire</span></a></el-menu-item>
+
+          <el-menu-item index="4"><span class="navi-text">Health Check Result</span></el-menu-item>
+          <el-menu-item index="5"><a href="./sign_in.html"><span class="navi-text">New User? Click here to sign in!</span></a></el-menu-item>
+          <el-menu-item index="6" class="about-us"><a href="./aboutus.html"><span class="navi-text">About us</span></a></el-menu-item>
+    </el-menu>
+  </div>
+</header>
+
+<div class="container">
+  <h1 style="font-size: 60px;text-align: center; margin-top: 70px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-shadow: 5px 5px 8px  #aaa;">Administrator Login</h1>
+  <!--注册表单-->
+ <form action="" class="form-horizontal" role="form" id="myform" method="POST">
+     <!--用户名-->
+    <div class="form-group">
+      <label>Username:</label>
+        <input type="text" class="form-control" id="admin-name" placeholder="Your user name">
+    </div>
+    <!--密码-->
+    <div class="form-group">
+      <label>Password:</label>
+        <input type="password" class="form-control" id="admin-password" placeholder="Your password">
+    </div>
+    <!--管理员码-->
+    <div class="form-group">
+      <label">Administrator Code:</label>
+        <input type="text" class="form-control" id="admin-code" placeholder="Administrator Code">
+    </div>
+    <!--提交按钮-->
+  <div class="form-group">
+      <div class="u-submit" style="margin-top: 28px;">
+        <button type="submit" class="form-control btn-primary" id="admin-submit">Submit</button>
+      </div>
+    </div>
+ </form>
+  
+</div>
+
+
+<div class="main">
+  <div class="shadow"></div>
+  <div class="boy">
+    <div class="leg leg-r">
+      <div class="leg-top">
+        <div class="leg-bottom">
+          <div class="leg-foot">  </div>
+        </div>
+      </div>
+    </div>
+    <div class="c">
+      <div class="ear">
+        <div class="ear-r"></div>
+      </div>
+      <div class="arm-r"></div>
+      <div class="torso"></div>
+      <div class="face">
+        <div class="face__eye-l"></div>
+        <div class="face__eye-r"></div>
+        <div class="face__nose"></div>
+        <div class="face__mouth"> </div>
+        <div class="face__bubble"></div>
+      </div>
+      <div class="hair-b">
+        <div class="hair-b__a hair-a--i"></div>
+        <div class="hair-b__b hair-a--i"></div>
+        <div class="hair-b__c hair-a--i"></div>
+        <div class="hair-b__d hair-a--i"> </div>
+      </div>
+      <div class="cap">
+        <div class="cap__bottom"></div>
+        <div class="cap__top"></div>
+        <div class="cap__center">  </div>
+      </div>
+      <div class="hair-a">
+        <div class="hair-a__a hair-a--i"></div>
+        <div class="hair-a__b hair-a--i"></div>
+        <div class="hair-a__c hair-a--i"></div>
+      </div>
+      <div class="ear">
+        <div class="ear-l">  </div>
+      </div>
+      <div class="pants"></div>
+      <div class="t-shirt"></div>
+      <div class="jacket"></div>
+      <div class="arm-l"></div>
+    </div>
+    <div class="leg leg-l">
+      <div class="leg-top">
+        <div class="leg-bottom">
+          <div class="leg-foot"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+<!-- partial -->
+<script  src="./js/script.js"></script>
+  <!-- import Vue before Element -->
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <!-- import JavaScript -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script>
+    var Main = {
+    data() {
+      return {
+        activeIndex: '2-2',
+      };
+    },
+    methods: {
+      handleSelect(key, keyPath) {
+        console.log(key, keyPath);
+      }
+    }
+  }
+var Ctor = Vue.extend(Main)
+new Ctor().$mount('#navigation')
+
+</script>
+</html>
